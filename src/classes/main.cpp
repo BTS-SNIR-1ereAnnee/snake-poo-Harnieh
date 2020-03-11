@@ -8,7 +8,7 @@
 
 
 using namespace std;
-
+int x=0;
 int main()
 {
 
@@ -17,10 +17,19 @@ int main()
     // initialisation des pointeurs
     fenetre = Board::getInstance ();
 
+
     Point p(10,4);
+ 
+ do //boucle de déplacement
+ {
+    p.erasePoint();
+    p.moveDown();
     p.drawPoint();
-    Point p2(10,5);
-    p2.drawPoint();
+    
+ } while (x==0);
+
+    
+    
     //cout << "press any key to quit" << endl;
     getchar();
     fenetre->kill();

@@ -1,5 +1,6 @@
 #include "Point.h"
 #include "Board.h"
+#include "Snake.h"
 #include <iostream>
 
 
@@ -23,12 +24,12 @@ void Point::setPoint(int x, int y)
 
 void Point::moveDown()
 {
-    m_y--;
+    m_y++;
 }
 
 void Point::moveUp()
 {
-    m_y++;
+    m_y--;
 }
 
 void Point::moveRight()
